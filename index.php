@@ -2,7 +2,7 @@
 echo 'My username is ' .$_ENV["USER"] . '!';
 ?>
 <?php
-$myName = .$_ENV["USER"];
+$myName = $_ENV["USER"];
 ?>
 <html>
 <head>

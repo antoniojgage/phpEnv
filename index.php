@@ -14,13 +14,15 @@ $lorisMiddleName = $_ENV["heyLori"];
 </body>
 <script>
     var lorisMiddleName = <?php
-                            $_ENV["heyLori"];
+                            empty($_ENV["heyLori"]) ? "I cant be empty" : $_ENV["heyLori"];
                             ?>
+    var x = "<?php echo $_ENV["USER"] ?>";
+    console.log(x)
 </script>
 <script>
     $(document).ready(function() {
         console.log("ready!");
-        console.log(lorisMiddleName)
+        console.log("Lori's Middle Name", lorisMiddleName)
     });
 </script>
 
